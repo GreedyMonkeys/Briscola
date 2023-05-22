@@ -3,4 +3,6 @@ spring:
     url: jdbc:h2:mem:testdb
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
+  flyway:
+    enabled: false

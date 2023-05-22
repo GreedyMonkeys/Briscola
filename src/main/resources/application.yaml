@@ -1,8 +1,7 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost/trump
-    username: root
-    password: root
-  jpa:
-    hibernate:
-      ddl-auto: update
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+server:
+  port: ${APPLICATION_PORT}
